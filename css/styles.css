@@ -1,6 +1,132 @@
+/* General */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Muli", sans-serif;
+}
+
+body {
+  background: linear-gradient(#625295, #e07985) no-repeat;
+}
+
+h1,
+h2 {
+  font-family: "Baloo Bhaina 2", cursive;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.gradient-line {
+  background: linear-gradient(to right, #eaa7b2, #aa9cc7, #8fc6ed);
+  width: 130px;
+  height: 3px;
+  margin: 0 auto 25px;
+  border-radius: 15px;
+}
+
+.learn-more-btn {
+  color: rgb(156, 154, 154);
+  border: 1px solid rgb(156, 154, 154);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: block;
+}
+
+hr {
+  display: block;
+  border: 0;
+  border-top: 1px solid #ccc;
+  height: 1px;
+  margin: 50px 0;
+  padding: 0;
+}
+
+/* General End */
+
+/* Hero */
+.hero {
+  color: whitesmoke;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 15px 0;
+  letter-spacing: 5px;
+  font-size: 2.5rem;
+}
+
+/* Main */
+main {
+  background: #fff;
+  color: #262626;
+  margin: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* Capture Section */
+.capture {
+  padding: 42px 42px 0 42px;
+}
+
+.capture img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.capture h2 {
+  margin-top: 15px;
+}
+
+.capture p {
+  margin-bottom: 25px;
+}
+
+/* Skills */
+.skills {
+  padding: 0 42px;
+}
+
+.skills .fa-code {
+  color: #efa8b0;
+}
+
+.skills .fa-copy {
+  color: #a89cc8;
+}
+
+.skills .fa-gem {
+  color: #8cc9f0;
+}
+
+.skills .skill-icon {
+  border: 1px solid rgb(192, 189, 189);
+  border-radius: 50%;
+  font-size: 60px;
+  padding: 40px;
+  height: 65px;
+  width: 65px;
+  box-sizing: content-box;
+}
+
+.skills h3 {
+  margin: 15px 0;
+}
+
+.skills p {
+  margin-bottom: 50px;
+}
+
+/* Projects */
+.projects {
+  padding: 0 42px;
 }
