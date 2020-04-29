@@ -6,8 +6,16 @@
   font-family: "Muli", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: linear-gradient(#625295, #e07985) no-repeat;
+}
+
+.main-section-x {
+  padding: 0 42px;
 }
 
 h1,
@@ -33,7 +41,7 @@ p {
 
 .btn {
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 12px 45px;
   border-radius: 8px;
   text-align: center;
   display: block;
@@ -64,7 +72,16 @@ hr {
 .hero {
   color: whitesmoke;
   padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+}
+
+.hero img {
+  width: 100px;
+  border-radius: 50%;
 }
 
 .hero h1 {
@@ -78,18 +95,49 @@ main {
   background: #fff;
   color: #262626;
   margin: 20px;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
+}
+
+/* Navigation */
+nav {
+  z-index: 2;
+  display: none;
+  position: sticky;
+  top: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+nav ul {
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  color: #262626;
+  text-decoration: none;
+  margin-left: 15px;
 }
 
 /* Capture Section */
 .capture {
-  padding: 42px 42px 0 42px;
+  padding-top: 42px;
 }
 
 .capture img {
+  border: 1px solid #cacaca;
+  padding: 10px;
   border-radius: 50%;
-  width: 80%;
+  width: 85%;
+  box-sizing: border-box;
 }
 
 .capture h2 {
@@ -101,10 +149,6 @@ main {
 }
 
 /* Skills */
-.skills {
-  padding: 0 42px;
-}
-
 .skills .fa-code {
   color: #efa8b0;
 }
@@ -118,10 +162,10 @@ main {
 }
 
 .skills .skill-icon {
-  border: 15px double rgb(192, 189, 189);
+  border: 10px double #e2e2e2;
   border-radius: 50%;
   font-size: 60px;
-  padding: 40px;
+  padding: 30px;
   height: 65px;
   width: 65px;
   box-sizing: content-box;
@@ -136,15 +180,14 @@ main {
 }
 
 /* Projects */
-.projects {
-  padding: 0 42px;
-}
 
 .project-stats {
   margin-top: 40px;
   border-radius: 10px;
   color: #fff;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-stats .project-icon {
@@ -155,7 +198,8 @@ main {
 
 .project-stats p {
   margin-top: 15px;
-  font-size: 3rem;
+  font-size: 2.8rem;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .project-stats .project-set {
@@ -187,25 +231,24 @@ main {
   margin: 30px 0;
 }
 
-/* Astral Creation */
-.astral-creation {
-  padding: 0 42px 42px 42px;
+/*  Get Started  */
+#get-started-section {
+  padding-bottom: 50px;
 }
 
-.astral-creation .get-started-btn {
+.get-started .get-started-btn {
   color: #fff;
   background: #8cc9f0;
   text-decoration: none;
-  padding: 10px 20px;
   border-radius: 8px;
   display: block;
   margin: 25px 0 10px 0;
 }
 
 /* Footer */
-footer {
+#footer {
   color: #fff;
-  padding: 28px 28px 50px 28px;
+  padding-bottom: 50px;
 }
 
 footer .left-col {
@@ -219,6 +262,10 @@ footer p {
 footer .learn-more-btn {
   color: #f0c4ca;
   border: 1px solid #f0c4ca;
+}
+
+footer .learn-more-btn:hover {
+  background: #e08690;
 }
 
 footer dt {
@@ -239,15 +286,85 @@ footer .social-icons {
 footer .social-icon {
   border: 1px solid #f0c4ca;
   color: #f0c4ca;
-  padding: 8px;
-  margin-left: 5px;
+  border-radius: 50%;
   box-sizing: content-box;
   height: 20px !important;
   width: 20px !important;
-  border-radius: 50%;
+  padding: 8px;
+  margin-left: 5px;
+}
+
+footer .social-icon:hover {
+  background: #e08690;
 }
 
 footer small {
   text-align: center;
   display: block;
+}
+
+/* ============
+  Media Queries 
+  =============*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .hero h1 {
+    margin: 15px 0;
+    letter-spacing: 5px;
+    font-size: 3.5rem;
+  }
+
+  .main-section-x {
+    padding: 0 50px;
+  }
+
+  main {
+    margin: 20px 30px;
+  }
+
+  nav {
+    display: block;
+  }
+
+  .capture {
+    padding-top: 60px;
+  }
+
+  .capture img {
+    border-radius: 50%;
+    width: 80%;
+  }
+
+  footer {
+    color: #fff;
+    padding: 38px 38px 50px 38px;
+  }
+
+  footer .learn-more-btn {
+    display: inline-block;
+  }
+
+  footer .social-icon {
+    padding: 12px;
+    margin-left: 5px;
+    height: 30px !important;
+    width: 30px !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

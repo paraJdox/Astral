@@ -17,14 +17,19 @@
       rel="stylesheet"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Fontawesome -->
     <script src="../js/all.js"></script>
     <title>Astral</title>
   </head>
   <body>
     <!-- Hero Section -->
-    <section class="hero">
-      <img src="../images/logo.svg" alt="Astral Logo" />
+    <section class="hero" id="hero">
+      <img src="../images/logo1.jpeg" alt="Astral Logo" />
       <h1>Astral</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veritatis
@@ -34,8 +39,19 @@
 
     <!-- Main Section -->
     <main>
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="#capture">Introduction</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#get-started">Get Started</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+
       <!-- Capture Section -->
-      <section class="capture" id="capture">
+      <section class="capture main-section-x" id="capture">
         <img src="../images/phone3.jpg" alt="Phone" />
         <h2>Capture the Moment</h2>
         <div class="gradient-line"></div>
@@ -47,10 +63,10 @@
         <a href="#" class="btn learn-more-btn">Learn More</a>
       </section>
 
-      <hr />
+      <hr id="skills" />
 
       <!-- Skills -->
-      <section class="skills" id="skills">
+      <section class="skills main-section-x">
         <div class="skill">
           <h2>Skills</h2>
           <div class="gradient-line"></div>
@@ -84,10 +100,10 @@
         <a href="#" class="btn learn-more-btn">Learn More</a>
       </section>
 
-      <hr />
+      <hr id="projects" />
 
       <!-- Projects -->
-      <section class="projects" id="projects">
+      <section class="projects main-section-x">
         <h2>Projects</h2>
         <div class="gradient-line"></div>
         <p>
@@ -147,10 +163,10 @@
         <a href="#" class="btn learn-more-btn">Learn More</a>
       </section>
 
-      <hr />
+      <hr id="get-started" />
 
       <!-- Astral Creation -->
-      <section class="astral-creation" id="astral-creation">
+      <section id="get-started-section" class="get-started main-section-x">
         <h2>Astral Creation</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero ducimus
@@ -165,7 +181,7 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer" class="main-section-x">
       <!-- Left Column -->
       <div class="left-col">
         <h2>Astral Photography</h2>
@@ -187,7 +203,7 @@
           <dd>(000) 000-0000 x 0000</dd>
 
           <dt>Email</dt>
-          <dd>AstralPhotograpy@gmail.com</dd>
+          <dd>AstralVision@gmail.com</dd>
         </dl>
       </div>
 
