@@ -12,6 +12,8 @@ html {
 
 body {
   background: linear-gradient(#625295, #e07985) no-repeat;
+  max-width: 1150px;
+  margin: 0 auto;
 }
 
 .main-section-x {
@@ -361,6 +363,10 @@ footer small {
 
   .capture img {
     width: 50%;
+  }
+
+  .capture .learn-more-btn {
+    display: inline-block;
   }
 
   .main-section-x {
