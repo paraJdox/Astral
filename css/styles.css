@@ -128,7 +128,7 @@ nav a {
 }
 
 /* Capture Section */
-.capture {
+#capture {
   padding-top: 42px;
 }
 
@@ -149,19 +149,19 @@ nav a {
 }
 
 /* Skills */
-.skills .fa-code {
+.skills-section .fa-code {
   color: #efa8b0;
 }
 
-.skills .fa-copy {
+.skills-section .fa-copy {
   color: #a89cc8;
 }
 
-.skills .fa-gem {
+.skills-section .fa-gem {
   color: #8cc9f0;
 }
 
-.skills .skill-icon {
+.skills-section .skill-icon {
   border: 10px double #e2e2e2;
   border-radius: 50%;
   font-size: 60px;
@@ -171,11 +171,11 @@ nav a {
   box-sizing: content-box;
 }
 
-.skills h3 {
+.skills-section h3 {
   margin: 15px 0;
 }
 
-.skills p {
+.skills-section p {
   margin-bottom: 50px;
 }
 
@@ -186,12 +186,9 @@ nav a {
   border-radius: 10px;
   color: #fff;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
 }
 
 .project-stats .project-icon {
-  font-size: 60px;
   height: 65px;
   width: 65px;
 }
@@ -331,12 +328,11 @@ footer small {
     display: block;
   }
 
-  .capture {
+  #capture {
     padding-top: 60px;
   }
 
   .capture img {
-    border-radius: 50%;
     width: 80%;
   }
 
@@ -359,6 +355,98 @@ footer small {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .hero p {
+    width: 60%;
+  }
+
+  .capture img {
+    width: 50%;
+  }
+
+  .main-section-x {
+    padding: 0 65px;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "programming security custom"
+      "btn btn btn";
+    gap: 40px;
+  }
+
+  .skill-one {
+    grid-area: programming;
+  }
+
+  .skill-two {
+    grid-area: security;
+  }
+
+  .skill-three {
+    grid-area: custom;
+  }
+
+  .skills a {
+    grid-area: btn;
+  }
+
+  .project-stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "connection management reach applications bonus";
+  }
+
+  .project-stats .connection {
+    grid-area: connection;
+  }
+
+  .project-stats .management {
+    grid-area: management;
+  }
+
+  .project-stats .reach {
+    grid-area: reach;
+  }
+
+  .project-stats .applications {
+    grid-area: applications;
+  }
+
+  .project-stats .bonus {
+    grid-area: bonus;
+  }
+
+  .project-stats .project-icon {
+    height: 45px;
+    width: 45px;
+  }
+
+  .project-stats p {
+    font-size: 2rem;
+  }
+
+  .project-stats .project-set {
+    padding: 20px;
+  }
+
+  .projects .btn {
+    display: inline-block;
+  }
+
+  .get-started .cta-btns {
+    display: flex;
+    justify-content: center;
+  }
+
+  .get-started .get-started-btn {
+    margin: 25px 8px 10px 0;
+  }
+
+  .get-started .learn-more-btn {
+    margin: 25px 0 10px 0;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
