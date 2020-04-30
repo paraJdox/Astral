@@ -12,11 +12,11 @@ html {
 
 body {
   background: linear-gradient(#625295, #e07985) no-repeat;
-  max-width: 1150px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.main-section-x {
+.main-section-inner {
   padding: 0 42px;
 }
 
@@ -55,8 +55,9 @@ p {
 }
 
 .learn-more-btn {
-  color: rgb(156, 154, 154);
-  border: 1px solid rgb(156, 154, 154);
+  color: #262626;
+  border: 1px solid rgb(190, 184, 184);
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 hr {
@@ -123,10 +124,14 @@ nav li {
   list-style-type: none;
 }
 
+nav li:nth-child(1) a {
+  margin-left: 0;
+}
+
 nav a {
   color: #262626;
   text-decoration: none;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 /* Capture Section */
@@ -151,11 +156,11 @@ nav a {
 }
 
 /* Skills */
-.skills-section .fa-code {
+.skills-section .fa-brain {
   color: #efa8b0;
 }
 
-.skills-section .fa-copy {
+.skills-section .fa-laptop {
   color: #a89cc8;
 }
 
@@ -235,6 +240,10 @@ nav a {
   padding-bottom: 50px;
 }
 
+.get-started p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 .get-started .get-started-btn {
   color: #fff;
   background: #8cc9f0;
@@ -293,6 +302,10 @@ footer .social-icon {
   margin-left: 5px;
 }
 
+footer .social-icons a:nth-child(1) .social-icon {
+  margin-left: 0;
+}
+
 footer .social-icon:hover {
   background: #e08690;
 }
@@ -318,7 +331,7 @@ footer small {
     font-size: 3.5rem;
   }
 
-  .main-section-x {
+  .main-section-inner {
     padding: 0 50px;
   }
 
@@ -339,7 +352,6 @@ footer small {
   }
 
   footer {
-    color: #fff;
     padding: 38px 38px 50px 38px;
   }
 
@@ -350,15 +362,23 @@ footer small {
   footer .social-icon {
     padding: 12px;
     margin-left: 5px;
-    height: 30px !important;
-    width: 30px !important;
+    height: 20px !important;
+    width: 20px !important;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  hr {
+    margin: 75px 0;
+  }
+
   .hero p {
     width: 60%;
+  }
+
+  #capture {
+    padding-top: 90px;
   }
 
   .capture img {
@@ -369,33 +389,17 @@ footer small {
     display: inline-block;
   }
 
-  .main-section-x {
+  .main-section-inner {
     padding: 0 65px;
   }
 
   .skills {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      "programming security custom"
-      "btn btn btn";
-    gap: 40px;
+    columns: 3;
+    column-gap: 40px;
   }
 
-  .skill-one {
-    grid-area: programming;
-  }
-
-  .skill-two {
-    grid-area: security;
-  }
-
-  .skill-three {
-    grid-area: custom;
-  }
-
-  .skills a {
-    grid-area: btn;
+  .skills-section .btn {
+    display: inline-block;
   }
 
   .project-stats {
@@ -457,8 +461,97 @@ footer small {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  hr {
+    margin: 100px 0;
+  }
+
+  #skills {
+    margin: 120px 0 100px 0 !important;
+  }
+
+  main {
+    margin-bottom: 80px;
+  }
+
+  .main-section-inner {
+    padding: 0 80px;
+  }
+
+  #capture {
+    padding-top: 150px;
+  }
+
+  .capture {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .capture p {
+    width: 88%;
+  }
+
+  .capture img {
+    width: 35%;
+  }
+
+  .capture .gradient-line {
+    margin: 10px auto 25px 0;
+  }
+
+  .get-started {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects .project-description {
+    columns: 2;
+    column-gap: 40px;
+    margin: 50px 0;
+  }
+
+  #get-started-section {
+    padding-bottom: 100px;
+  }
+
+  .get-started p {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  footer {
+    padding: 0 100px 110px 100px !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "learn-more contact-us"
+      "copyright copyright";
+    gap: 50px;
+  }
+
+  footer .left-col {
+    grid-area: learn-more;
+    margin-bottom: 20px;
+  }
+
+  footer .right-area {
+    grid-area: contact-us;
+  }
+
+  footer small {
+    grid-area: copyright;
+  }
+
+  footer .social-icons {
+    text-align: left;
+    margin-bottom: 20px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  main {
+    margin: 20px 0 80px;
+  }
 }
