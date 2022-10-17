@@ -1,5 +1,5 @@
 # Astral
-A static website created with custom CSS and HTML Semantics. <a href="https://parajdox1.github.io/Astral/">Check the Website Live!</a>
+A static website created with custom CSS and HTML Semantics. <a href="https://parajdox.github.io/Astral/">Check the Website Live!</a>
 
 This is a practice project to show that **I can turn design into code (and tweaked it a little)**. <a href="https://html5up.net/stellar">(Design Reference)</a>  
 
